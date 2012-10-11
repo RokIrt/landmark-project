@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主页面text -->
+    <string-array name="ic_main_tab_item_text">
+        <item>查找</item>
+        <item>团购</item>
+        <item>我的</item>
+        <item>签到</item>
+        <item>更多</item>
+    </string-array>
+
+    <!-- 主页面icon -->
+    <integer-array name="ic_main_tab_item_icon">
+        <item>@drawable/main_index_search</item>
+        <item>@drawable/main_index_tuan</item>
+        <item>@drawable/main_index_checkin</item>
+        <item>@drawable/main_index_my</item>
+        <item>@drawable/main_index_more</item>
+    </integer-array>
+
+</resources>
