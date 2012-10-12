@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 亮蓝色 -->
+    <color name="fl_color_78A1CB">#78A1CB</color>
+
+</resources>

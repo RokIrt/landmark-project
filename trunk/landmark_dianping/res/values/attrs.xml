@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 搜索item -->
+    <declare-styleable name="search_item">
+        <attr name="background" format="integer|color"></attr>
+        <!-- 标题text -->
+        <attr name="title" format="integer|string"></attr>
+        <attr name="title_color" format="integer|color"></attr>
+        <!-- 说明text -->
+        <attr name="brief" format="integer|string"></attr>
+        <attr name="brief_color" format="integer|color"></attr>
+        <!-- 箭头icon -->
+        <attr name="arrow" format="integer"></attr>
+    </declare-styleable>
+
+</resources>
