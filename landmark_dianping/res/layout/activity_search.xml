@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.landmark.dianping.view.SearchItemView
+            xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+            style="@style/main_search_style"
+            myspace:arrow="@drawable/arrow"
+            myspace:brief="大小排行"
+            myspace:title="排行榜" />
+    </LinearLayout>
+
+</ScrollView>

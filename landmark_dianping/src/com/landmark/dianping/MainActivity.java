@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TabHost;
 
 import com.landmark.dianping.ui.more.MoreActivity;
+import com.landmark.dianping.ui.search.SearchActivity;
 
 public class MainActivity extends TabActivity {
 
@@ -29,7 +30,7 @@ public class MainActivity extends TabActivity {
 				.newTabSpec("A")
 				.setIndicator(
 						View.inflate(this, R.layout.tab_indicator_search, null))
-				.setContent(new Intent(this, MoreActivity.class)));
+				.setContent(new Intent(this, SearchActivity.class)));
 		mTabHost.addTab(mTabHost
 				.newTabSpec("B")
 				.setIndicator(
