@@ -31,7 +31,16 @@
         <item name="android:textSize">13.0sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <!-- main search style -->
+
+    <!-- main near style -->
+    <style name="main_near_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- main search style -->
     <style name="main_search_style">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">60.0dip</item>
