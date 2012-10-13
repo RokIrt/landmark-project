@@ -8,28 +8,24 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.landmark.dianping.R;
+import com.landmark.dianping.application.AppUtil;
 
-public class SearchItemView extends RelativeLayout {
+public class NearItemView extends RelativeLayout {
 
 	private Context mContext;
 
 	private TextView title;
-	private TextView brief;
 	private ImageView arrow;
 
 	private int title_int;
 	private String title_str;
 	private int title_color_int;
 
-	private int brief_int;
-	private String brief_str;
-	private int brief_color_int;
-
 	private int arrow_icon;
 
 	private RelativeLayout.LayoutParams mLayoutParams;
 
-	public SearchItemView(Context context, AttributeSet attrs) {
+	public NearItemView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		initUI();
 		// 获取属性集
@@ -41,11 +37,6 @@ public class SearchItemView extends RelativeLayout {
 		title_color_int = type.getResourceId(
 				R.styleable.search_item_title_color, 0);
 
-		brief_int = type.getResourceId(R.styleable.search_item_brief, 0);
-		brief_str = type.getString(R.styleable.search_item_brief);
-		brief_color_int = type.getResourceId(
-				R.styleable.search_item_brief_color, 0);
-
 		arrow_icon = type.getResourceId(R.styleable.search_item_arrow, 0);
 		type.recycle();
 	}
@@ -53,8 +44,8 @@ public class SearchItemView extends RelativeLayout {
 	private void initUI() {
 		mContext = getContext();
 		title = new TextView(mContext);
-		brief = new TextView(mContext);
 		arrow = new ImageView(mContext);
+		arrow.setClickable(true);
 	}
 
 	@Override
@@ -65,20 +56,15 @@ public class SearchItemView extends RelativeLayout {
 		// title
 		mLayoutParams = new RelativeLayout.LayoutParams(
 				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		mLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+		mLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+		mLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
 		this.addView(title, mLayoutParams);
 
-		// brief
-		mLayoutParams = new RelativeLayout.LayoutParams(
-				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		mLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-		this.addView(brief, mLayoutParams);
-
+		final int bound = AppUtil.dip2px(mContext, 64);
 		// 添加子组件
-		mLayoutParams = new RelativeLayout.LayoutParams(
-				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		mLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-		mLayoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
+		mLayoutParams = new RelativeLayout.LayoutParams(bound, bound);
+		mLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+		mLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
 		this.addView(arrow, mLayoutParams);
 	}
 
@@ -92,17 +78,6 @@ public class SearchItemView extends RelativeLayout {
 		if (title_color_int != 0) {
 			title.setTextColor(mContext.getResources()
 					.getColor(title_color_int));
-		}
-
-		if (brief_int != 0) {
-			brief.setText(brief_int);
-		}
-		if (brief_str != null) {
-			brief.setText(brief_str);
-		}
-		if (brief_color_int != 0) {
-			brief.setTextColor(mContext.getResources()
-					.getColor(brief_color_int));
 		}
 
 		if (arrow_icon != 0) {
