@@ -1,4 +1,4 @@
-package com.landmark.dianping.ui.more;
+package com.landmark.dianping.ui.activity.more;
 
 import android.app.Activity;
 import android.os.Bundle;

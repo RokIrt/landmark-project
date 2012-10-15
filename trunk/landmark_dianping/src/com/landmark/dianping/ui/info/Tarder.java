@@ -1,4 +1,4 @@
-package com.landmark.dianping.info;
+package com.landmark.dianping.ui.info;
 
 import java.io.Serializable;
 
