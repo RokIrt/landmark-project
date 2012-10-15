@@ -1,14 +1,13 @@
-package com.landmark.dianping.ui.activity.more;
+package com.landmark.dianping.ui.activity.search.list;
 
 import android.os.Bundle;
 
 import com.landmark.dianping.base.BaseActivity;
 
-public class MoreActivity extends BaseActivity {
+public class SearchListActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 	}
 

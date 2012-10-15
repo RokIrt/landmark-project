@@ -60,18 +60,21 @@
 
             <com.landmark.dianping.view.NearItemView
                 xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/food"
                 style="@style/main_near_style"
                 myspace:arrow="@drawable/food"
                 myspace:title="美食" />
 
             <com.landmark.dianping.view.NearItemView
                 xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/snack"
                 style="@style/main_near_style"
                 myspace:arrow="@drawable/snack"
                 myspace:title="小吃快餐" />
 
             <com.landmark.dianping.view.NearItemView
                 xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/coffee"
                 style="@style/main_near_style"
                 myspace:arrow="@drawable/coffee"
                 myspace:title="咖啡厅" />
@@ -87,18 +90,21 @@
 
             <com.landmark.dianping.view.NearItemView
                 xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/film"
                 style="@style/main_near_style"
                 myspace:arrow="@drawable/film"
                 myspace:title="电影院" />
 
             <com.landmark.dianping.view.NearItemView
                 xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/ktv"
                 style="@style/main_near_style"
                 myspace:arrow="@drawable/ktv"
                 myspace:title="KTV" />
 
             <com.landmark.dianping.view.NearItemView
                 xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/more"
                 style="@style/main_near_style"
                 myspace:arrow="@drawable/more"
                 myspace:title="更多分类" />

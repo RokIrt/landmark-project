@@ -3,6 +3,8 @@
 
     <!-- 搜索item -->
     <declare-styleable name="search_item">
+
+        <!-- item 背景 -->
         <attr name="background" format="integer|color"></attr>
         <!-- 标题text -->
         <attr name="title" format="integer|string"></attr>

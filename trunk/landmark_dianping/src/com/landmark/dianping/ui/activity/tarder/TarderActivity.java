@@ -1,44 +1,39 @@
-package com.landmark.dianping.ui.activity.sign;
+package com.landmark.dianping.ui.activity.tarder;
 
 import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 
 import com.landmark.dianping.R;
 import com.landmark.dianping.base.BaseActivity;
 import com.landmark.dianping.ui.adapter.TarderAdapter;
 import com.landmark.dianping.ui.info.Tarder;
-import com.landmark.dianping.view.PullFooterListView;
-import com.landmark.dianping.view.PullFooterListView.OnLoadMoreListener;
-import com.landmark.dianping.view.PullFooterListView.OnRefreshListener;
+import com.landmark.dianping.view.FooterListView;
+import com.landmark.dianping.view.FooterListView.OnLoadMoreListener;
 
-public class SignActivity extends BaseActivity implements OnClickListener,
-		OnItemClickListener, OnRefreshListener, OnLoadMoreListener {
+public class TarderActivity extends BaseActivity implements OnLoadMoreListener {
 
-	private PullFooterListView mPullFooterListView;
+	private FooterListView mFooterListView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sign);
+		setContentView(R.layout.activity_tarder);
 		init();
 	}
 
 	@Override
 	protected void initUI() {
-		mPullFooterListView = (PullFooterListView) findViewById(R.id.sign_list);
-		mPullFooterListView.setOnItemClickListener(this);
-		mPullFooterListView.setonRefreshListener(this);
-		mPullFooterListView.setOnLoadMoreListener(this);
+		mFooterListView = (FooterListView) findViewById(R.id.tarder_list);
+		mFooterListView.setOnLoadMoreListener(this);
+		mFooterListView.setOnItemClickListener(this);
 	}
 
 	@Override
 	protected void initData() {
-		mPullFooterListView.setAdapter(new TarderAdapter(this, getTestData()));
+		mFooterListView.setAdapter(new TarderAdapter(this, getTestData()));
 	}
 
 	String[] url = { "http://t02.pic.sogou.com/2cb39f31afd937b5.jpg",
@@ -62,8 +57,21 @@ public class SignActivity extends BaseActivity implements OnClickListener,
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-
+		switch (v.getId()) {
+		case R.id.title_left:
+			this.finish();
+			break;
+		case R.id.title_right:
+			break;
+		case R.id.filter_tool_left:
+			break;
+		case R.id.filter_tool_center:
+			break;
+		case R.id.filter_tool_right:
+			break;
+		default:
+			break;
+		}
 	}
 
 	@Override
@@ -73,15 +81,10 @@ public class SignActivity extends BaseActivity implements OnClickListener,
 	}
 
 	@Override
-	public void onRefresh() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		// TODO Auto-generated method stub
-
+		super.onItemClick(parent, view, position, id);
 	}
+
 }
