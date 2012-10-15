@@ -56,4 +56,30 @@
         <item name="android:background">@drawable/title_background</item>
     </style>
 
+    <!-- rating style -->
+    <style name="rating">
+        <item name="android:maxHeight">15.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/fl_ratingbar_small</item>
+        <item name="android:progressDrawable">@drawable/fl_ratingbar_small</item>
+        <item name="android:minHeight">15.0dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <!-- 加载更多  loadingbar -->
+    <style name="loading_bar">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:indeterminateDrawable">@drawable/fl_loading_bar</item>
+        <item name="android:indeterminateDuration">1500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+    </style>
+    
+    <!-- 加载更多 字体 -->
+    <style name="fl_list_load_more_text">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/fl_color_78A1CB</item>
+        <item name="android:textSize">15.0sp</item>
+    </style>
+
 </resources>
