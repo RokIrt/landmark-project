@@ -1,4 +1,4 @@
-package com.landmark.dianping.ui.sign;
+package com.landmark.dianping.ui.activity.search;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,12 +7,13 @@ import android.view.View.OnClickListener;
 import com.landmark.dianping.R;
 import com.landmark.dianping.base.BaseActivity;
 
-public class SignActivity extends BaseActivity implements OnClickListener {
+public class SearchActivity extends BaseActivity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sign);
+		setContentView(R.layout.activity_search);
 	}
 
 	@Override

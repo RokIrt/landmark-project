@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TabHost;
 
-import com.landmark.dianping.ui.more.MoreActivity;
-import com.landmark.dianping.ui.search.SearchActivity;
-import com.landmark.dianping.ui.sign.SignActivity;
+import com.landmark.dianping.ui.activity.more.MoreActivity;
+import com.landmark.dianping.ui.activity.search.SearchActivity;
+import com.landmark.dianping.ui.activity.sign.SignActivity;
 
 public class MainActivity extends TabActivity {
 

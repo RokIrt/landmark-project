@@ -21,9 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.landmark.dianping.ui.more.MoreActivity" />
-        <activity android:name="com.landmark.dianping.ui.search.SearchActivity" />
-        <activity android:name="com.landmark.dianping.ui.sign.SignActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.more.MoreActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.search.SearchActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.sign.SignActivity" />
     </application>
 
 </manifest>
