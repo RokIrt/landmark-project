@@ -8,6 +8,7 @@ import android.widget.TabHost;
 
 import com.landmark.dianping.ui.more.MoreActivity;
 import com.landmark.dianping.ui.search.SearchActivity;
+import com.landmark.dianping.ui.sign.SignActivity;
 
 public class MainActivity extends TabActivity {
 
@@ -40,7 +41,7 @@ public class MainActivity extends TabActivity {
 				.newTabSpec("C")
 				.setIndicator(
 						View.inflate(this, R.layout.tab_indicator_checkin, null))
-				.setContent(new Intent(this, MoreActivity.class)));
+				.setContent(new Intent(this, SignActivity.class)));
 		mTabHost.addTab(mTabHost
 				.newTabSpec("D")
 				.setIndicator(
