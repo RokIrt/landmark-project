@@ -49,4 +49,11 @@
         <item name="android:padding">8.0dip</item>
     </style>
 
+    <!-- title style -->
+    <style name="title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:background">@drawable/title_background</item>
+    </style>
+
 </resources>
