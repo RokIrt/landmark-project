@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title_style" >
+
+        <ImageView
+            android:id="@+id/title_left"
+            android:layout_width="60.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_btn_right"
+            android:contentDescription="@string/app_name"
+            android:onClick="onClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="附近商家" />
+
+        <ImageView
+            android:id="@+id/title_right"
+            android:layout_width="60.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_btn_right"
+            android:contentDescription="@string/app_name"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <include layout="@layout/filter_item" />
+
+    <view
+        android:id="@+id/tarder_list"
+        style="@style/list_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="com.landmark.dianping.view.FooterListView"
+        android:divider="@drawable/list_item_divide" />
+
+</LinearLayout>
