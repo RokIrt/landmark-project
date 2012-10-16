@@ -5,6 +5,7 @@ import android.app.Application;
 public class MyApp extends Application {
 
 	private static MyApp instance;
+	public static SharePreferenceUtil preferences = null;
 
 	@Override
 	public void onCreate() {
@@ -24,4 +25,10 @@ public class MyApp extends Application {
 		super.onTerminate();
 	}
 
+	public static SharePreferenceUtil getPre() {
+		if (null == preferences)
+			preferences = new SharePreferenceUtil(instance);
+		return preferences;
+	}
+	
 }
