@@ -41,7 +41,6 @@
             android:background="@drawable/title_btn_right" 
             android:textColor="@color/white"/>
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -65,7 +64,6 @@
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_marginTop="10dp"
                 android:text="您还未登陆" />
-
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
@@ -75,16 +73,14 @@
 
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical" >
-
         <LinearLayout
-            android:id="@+id/linearLayout11"
+            android:id="@+id/my_card"
             android:layout_width="match_parent"
             android:layout_height="45dp" 
             android:background="@drawable/my_list_item_1" 
@@ -92,14 +88,12 @@
             android:layout_marginLeft="10dp" 
             android:layout_marginRight="10dp" 
             android:layout_marginTop="10dp">
-
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/my_card_icon_x" 
                 android:layout_marginLeft="15dp"/>
-
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
@@ -108,16 +102,14 @@
                 android:layout_gravity="center_vertical" 
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
-
         <LinearLayout
-            android:id="@+id/linearLayout12"
+            android:id="@+id/my_profile_book"
             android:layout_width="match_parent"
             android:layout_height="45dp" 
             android:background="@drawable/my_list_item_1" 
             android:layout_marginLeft="10dp" 
             android:layout_marginRight="10dp" 
             android:layout_marginTop="5dp">
-
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="wrap_content"
@@ -125,7 +117,6 @@
                 android:src="@drawable/my_profile_book_x" 
                 android:layout_marginLeft="15dp" 
                 android:layout_marginTop="3dp"/>
-
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
@@ -134,9 +125,7 @@
                 android:layout_gravity="center_vertical" 
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
-
     </LinearLayout>
-
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
@@ -160,7 +149,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/list_divider_holo_light" />
         <LinearLayout
-            android:id="@+id/linearLayout5"
+            android:id="@+id/my_favorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/imageView5"
@@ -185,11 +174,11 @@
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/linearLayout6"
+            android:id="@+id/my_checkin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/linearLayout5"
+            android:layout_alignTop="@+id/my_favorite"
             android:layout_marginRight="34dp"
              >
             <ImageView
@@ -210,10 +199,10 @@
                 android:layout_marginTop="9dp"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/linearLayout8"
+            android:id="@+id/my_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/linearLayout5" 
+            android:layout_below="@+id/my_favorite" 
             android:layout_marginTop="20dp" 
             android:layout_marginLeft="10dp">
             <ImageView
@@ -232,11 +221,11 @@
                 android:layout_marginLeft="10dp" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/linearLayout7"
+            android:id="@+id/my_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/linearLayout6"
-            android:layout_alignTop="@+id/linearLayout8" >
+            android:layout_alignLeft="@+id/my_checkin"
+            android:layout_alignTop="@+id/my_photo" >
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
@@ -269,7 +258,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/list_divider_holo_light" />
         <LinearLayout
-            android:id="@+id/linearLayout9"
+            android:id="@+id/my_focus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -280,7 +269,8 @@
                 android:id="@+id/imageView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/my_focus_icon_x" android:layout_marginLeft="5dp"/>
+                android:src="@drawable/my_focus_icon_x" 
+                android:layout_marginLeft="5dp"/>
             <TextView
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
@@ -290,7 +280,7 @@
                 android:layout_marginLeft="10dp" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/linearLayout10"
+            android:id="@+id/my_fans"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
