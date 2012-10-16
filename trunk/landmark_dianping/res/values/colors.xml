@@ -5,5 +5,8 @@
     <color name="white">#ffffff</color>
     <!-- 亮蓝色 -->
     <color name="fl_color_78A1CB">#78A1CB</color>
-
+	<!-- 暗灰(详见我的页面上半部分) -->
+	<color name="dark_gray">#DBDAD6</color>
+	<!-- 亮灰色(详见我的页面下半部分) -->
+	<color name="light_gray">#F3F2F0</color>
 </resources>
