@@ -45,7 +45,7 @@ public class NearItemView extends RelativeLayout {
 		mContext = getContext();
 		title = new TextView(mContext);
 		arrow = new ImageView(mContext);
-		arrow.setClickable(true);
+//		arrow.setClickable(true);
 	}
 
 	@Override
