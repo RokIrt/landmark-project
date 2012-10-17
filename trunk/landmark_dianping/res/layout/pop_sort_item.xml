@@ -9,8 +9,9 @@
     <TextView
         android:id="@+id/pop_text"
         android:layout_width="fill_parent"
-        android:layout_height="32dip"
+        android:layout_height="32.0dip"
         android:text="TextView"
+        android:gravity="center_vertical"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/text_color_darkgray_to_white" />
 
