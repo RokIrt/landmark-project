@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 
 import com.landmark.dianping.R;
 import com.landmark.dianping.base.BaseActivity;
+import com.landmark.dianping.ui.activity.pop.DropDownBuilder;
 import com.landmark.dianping.ui.adapter.TarderAdapter;
 import com.landmark.dianping.ui.info.Tarder;
 import com.landmark.dianping.view.FooterListView;
@@ -64,10 +65,17 @@ public class TarderActivity extends BaseActivity implements OnLoadMoreListener {
 		case R.id.title_right:
 			break;
 		case R.id.filter_tool_left:
+			DropDownBuilder p = DropDownBuilder.getInstance(this)
+					.getDistancePopWindow();
+			p.showAsDropDown(findViewById(R.id.filter_tool_left));
 			break;
 		case R.id.filter_tool_center:
+			p = DropDownBuilder.getInstance(this).getTypePopWindow();
+			p.showAsDropDown(findViewById(R.id.filter_tool_center));
 			break;
 		case R.id.filter_tool_right:
+			p = DropDownBuilder.getInstance(this).getSortPopWindow();
+			p.showAsDropDown(findViewById(R.id.filter_tool_right));
 			break;
 		default:
 			break;
