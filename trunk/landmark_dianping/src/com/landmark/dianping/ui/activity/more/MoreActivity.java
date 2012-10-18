@@ -2,6 +2,7 @@ package com.landmark.dianping.ui.activity.more;
 
 import android.os.Bundle;
 
+import com.landmark.dianping.R;
 import com.landmark.dianping.base.BaseActivity;
 
 public class MoreActivity extends BaseActivity {
@@ -10,6 +11,7 @@ public class MoreActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		this.setContentView(R.layout.activity_more);
 	}
 
 	@Override
