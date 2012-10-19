@@ -34,6 +34,7 @@
         <activity android:name="com.landmark.dianping.ui.activity.own.MineActivity" />
         <activity android:name="com.landmark.dianping.ui.activity.own.LoginActivity" />
         <activity android:name="com.landmark.dianping.ui.activity.own.MineDetaileActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.sign.DetailActivity" />
         <activity android:name="com.landmark.dianping.ui.activity.tarder.TarderActivity" />
     </application>
 

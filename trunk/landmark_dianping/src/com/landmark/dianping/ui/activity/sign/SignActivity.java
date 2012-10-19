@@ -2,6 +2,7 @@ package com.landmark.dianping.ui.activity.sign;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -82,6 +83,7 @@ public class SignActivity extends BaseActivity implements OnClickListener,
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		// TODO Auto-generated method stub
-
+		Intent intent = new Intent(this,DetailActivity.class);
+		this.startActivity(intent);
 	}
 }
