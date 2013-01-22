@@ -7,6 +7,13 @@
         android:minSdkVersion="7"
         android:targetSdkVersion="15" />
 
+    <!-- 获取网络状态的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard读写数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.landmark.dianping.application.MyApp"
         android:icon="@drawable/ic_launcher"
@@ -21,7 +28,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.landmark.dianping.ui.more.MoreActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.more.MoreActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.search.SearchActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.sign.SignActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.own.MineActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.own.LoginActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.own.MineDetaileActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.sign.DetailActivity" />
+        <activity android:name="com.landmark.dianping.ui.activity.tarder.TarderActivity" />
     </application>
 
 </manifest>
