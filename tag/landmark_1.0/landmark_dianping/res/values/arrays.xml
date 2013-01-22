@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主页面text -->
+    <string-array name="ic_main_tab_item_text">
+        <item>查找</item>
+        <item>团购</item>
+        <item>我的</item>
+        <item>签到</item>
+        <item>更多</item>
+    </string-array>
+
+    <!-- 主页面icon -->
+    <integer-array name="ic_main_tab_item_icon">
+        <item>@drawable/main_index_search</item>
+        <item>@drawable/main_index_tuan</item>
+        <item>@drawable/main_index_checkin</item>
+        <item>@drawable/main_index_my</item>
+        <item>@drawable/main_index_more</item>
+    </integer-array>
+
+    <!-- pop distance text -->
+    <string-array name="pop_distance_text">
+        <item>500m</item>
+        <item>1km</item>
+        <item>2km</item>
+        <item>5km</item>
+        <item>全城</item>
+    </string-array>
+
+    <!-- pop sort text -->
+    <string-array name="pop_sort_text">
+        <item>默认排序</item>
+        <item>距离最近</item>
+        <item>按人气排序</item>
+        <item>按总体评论排序</item>
+        <item>优惠券商户排序</item>
+        <item>按口味排序</item>
+        <item>按环境排序</item>
+        <item>按服务排序</item>
+        <item>费用从高到低排序</item>
+        <item>费用从低到高排序</item>
+    </string-array>
+
+    <!-- pop type text -->
+    <string-array name="pop_type_text">
+        <item>全部分类</item>
+        <item>美食</item>
+        <item>休闲娱乐</item>
+        <item>购物</item>
+        <item>酒店</item>
+        <item>丽人</item>
+        <item>运动健身</item>
+        <item>结婚</item>
+        <item>亲子</item>
+        <item>生活服务</item>
+    </string-array>
+
+    <!-- pop type icon -->
+    <integer-array name="pop_type_icon">
+        <item>@drawable/ic_category_0</item>
+        <item>@drawable/ic_category_10</item>
+        <item>@drawable/ic_category_30</item>
+        <item>@drawable/ic_category_20</item>
+        <item>@drawable/ic_category_60</item>
+        <item>@drawable/ic_category_50</item>
+        <item>@drawable/ic_category_45</item>
+        <item>@drawable/ic_category_55</item>
+        <item>@drawable/ic_category_70</item>
+        <item>@drawable/ic_category_80</item>
+    </integer-array>
+
+    <!-- pop sub type text -->
+    <string-array name="pop_sub_type_text_0">
+        <item>全部分类</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_1">
+        <item>全部美食</item>
+        <item>北京菜</item>
+        <item>江苏菜</item>
+        <item>粤菜</item>
+        <item>湘菜</item>
+        <item>川菜</item>
+        <item>湖北菜</item>
+        <item>东北菜</item>
+        <item>其他</item>
+        <item>火锅</item>
+        <item>自助餐</item>
+        <item>小吃快餐</item>
+        <item>面包甜点</item>
+        <item>东南亚菜</item>
+        <item>西餐</item>
+        <item>素菜</item>
+        <item>海鲜</item>
+        <item>日本</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_2">
+        <item>全部休闲娱乐</item>
+        <item>酒吧</item>
+        <item>咖啡厅</item>
+        <item>茶馆</item>
+        <item>足疗按摩</item>
+        <item>公园</item>
+        <item>景点/郊游</item>
+        <item>KTV</item>
+        <item>台球馆</item>
+        <item>洗浴</item>
+        <item>桌面游戏</item>
+        <item>文化艺术</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_3">
+        <item>全部购物</item>
+        <item>药店</item>
+        <item>综合商场</item>
+        <item>食品茶酒</item>
+        <item>化妆品</item>
+        <item>服饰鞋包</item>
+        <item>数码家电</item>
+        <item>户外运动</item>
+        <item>眼镜店</item>
+        <item>家具家居</item>
+        <item>超市/便利店</item>
+        <item>亲子购物</item>
+        <item>特色集市</item>
+        <item>更多购物场所</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_4">
+        <item>全部酒店</item>
+        <item>经济型酒店</item>
+        <item>青年旅社</item>
+        <item>更多酒店住宿</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_5">
+        <item>全部丽人</item>
+        <item>美发</item>
+        <item>化妆品</item>
+        <item>美容/SPA</item>
+        <item>齿科</item>
+        <item>瘦身纤体</item>
+        <item>瑜伽</item>
+        <item>舞蹈</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_6">
+        <item>全部运动健身</item>
+        <item>健身中心</item>
+        <item>游泳馆</item>
+        <item>网球场</item>
+        <item>台球馆</item>
+        <item>瑜伽</item>
+        <item>舞蹈</item>
+        <item>乒乓球馆</item>
+        <item>武术场馆</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_7">
+        <item>全部结婚</item>
+        <item>婚纱摄影</item>
+        <item>婚庆公司</item>
+        <item>婚纱礼服</item>
+        <item>婚宴酒店</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_8">
+        <item>全部亲子</item>
+        <item>幼儿教育</item>
+        <item>亲子游乐</item>
+        <item>孕产护理</item>
+        <item>亲子购物</item>
+    </string-array>
+    <string-array name="pop_sub_type_text_9">
+        <item>全部生活服务</item>
+        <item>停车场</item>
+        <item>加油站</item>
+        <item>银行</item>
+        <item>齿科</item>
+        <item>培训</item>
+        <item>医院</item>
+        <item>汽车服务</item>
+        <item>旅行社</item>
+        <item>快照/冲印</item>
+        <item>学校</item>
+        <item>干洗店</item>
+        <item>小区</item>
+        <item>商务楼</item>
+        <item>更多生活服务</item>
+    </string-array>
+
+</resources>

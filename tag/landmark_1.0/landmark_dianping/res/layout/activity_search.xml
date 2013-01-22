@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/title_style" >
+
+            <TextView
+                android:layout_width="82.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/change_city_btn"
+                android:gravity="center_vertical"
+                android:paddingLeft="8.0dip"
+                android:text="未知" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:hint="商户名，地址等..." />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="onClick"
+                    android:src="@drawable/icon_mic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8.0dip"
+            android:text="附近" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip" >
+
+            <com.landmark.dianping.view.NearItemView
+                xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/food"
+                style="@style/main_near_style"
+                myspace:arrow="@drawable/food"
+                myspace:title="美食" />
+
+            <com.landmark.dianping.view.NearItemView
+                xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/snack"
+                style="@style/main_near_style"
+                myspace:arrow="@drawable/snack"
+                myspace:title="小吃快餐" />
+
+            <com.landmark.dianping.view.NearItemView
+                xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/coffee"
+                style="@style/main_near_style"
+                myspace:arrow="@drawable/coffee"
+                myspace:title="咖啡厅" />
+        </LinearLayout>
+
+        <include layout="@layout/list_item_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip" >
+
+            <com.landmark.dianping.view.NearItemView
+                xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/film"
+                style="@style/main_near_style"
+                myspace:arrow="@drawable/film"
+                myspace:title="电影院" />
+
+            <com.landmark.dianping.view.NearItemView
+                xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/ktv"
+                style="@style/main_near_style"
+                myspace:arrow="@drawable/ktv"
+                myspace:title="KTV" />
+
+            <com.landmark.dianping.view.NearItemView
+                xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+                android:id="@+id/more"
+                style="@style/main_near_style"
+                myspace:arrow="@drawable/more"
+                myspace:title="更多分类" />
+        </LinearLayout>
+
+        <include layout="@layout/list_item_divider" />
+
+        <com.landmark.dianping.view.SearchItemView
+            xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+            style="@style/main_search_style"
+            myspace:arrow="@drawable/arrow"
+            myspace:brief="找美食，快速又好玩"
+            myspace:title="摇一摇" />
+
+        <include layout="@layout/list_item_divider" />
+
+        <com.landmark.dianping.view.SearchItemView
+            xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+            style="@style/main_search_style"
+            myspace:arrow="@drawable/arrow"
+            myspace:brief="按商区查询，找遍城市每个角落"
+            myspace:title="搜全城" />
+
+        <include layout="@layout/list_item_divider" />
+
+        <com.landmark.dianping.view.SearchItemView
+            xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+            style="@style/main_search_style"
+            myspace:arrow="@drawable/arrow"
+            myspace:brief="全程最佳，生活宝典"
+            myspace:title="排行榜" />
+
+        <include layout="@layout/list_item_divider" />
+
+        <com.landmark.dianping.view.SearchItemView
+            xmlns:myspace="http://schemas.android.com/apk/res/com.landmark.dianping"
+            style="@style/main_search_style"
+            myspace:arrow="@drawable/arrow"
+            myspace:brief="免费使用，省钱法宝"
+            myspace:title="优惠券" />
+    </LinearLayout>
+
+</ScrollView>
